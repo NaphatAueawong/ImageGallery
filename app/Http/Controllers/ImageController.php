@@ -29,7 +29,7 @@ class ImageController extends Controller
     public function uploadImage(Request $request)
     {
         $request->validate([
-            'file' => 'required|mimes:jpeg,jpg,png|min:1|max:20000',
+            'file' => 'required|mimes:jpeg,jpg,png|min:0|max:20000',
         ]);
 
         $file = $request->file('file');
@@ -62,9 +62,7 @@ class ImageController extends Controller
         $image->delete();
         return response()->json([
             'message' => 'delete',
-//            'images' => User::where('id', auth()->id())->first()->images
         ], 200);
-
     }
 
 }

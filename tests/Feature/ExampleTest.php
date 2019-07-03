@@ -87,21 +87,21 @@ class ExampleTest extends TestCase
         }
     }
 
-
-
     public function test_upload_is_record_created(){
         Storage::fake('public');
         $image = UploadedFile::fake()->image('test.jpeg');
         $user = factory(User::class)->create();
         $this->actingAs($user);
 
-        $this->json('POST', '/uploadImage', ['file' => $image]);
+        $this->json('POST', '/uploadImage', [
+            'file' => $image
+        ]);
 //        $this->post('/uploadImage', ['file' => $image]);
 
         $this->assertCount(1, Image::all());
     }
 
-    public function test_upload_image_is_image_seved(){
+    public function test_upload_image_is_image_saved(){
 
         Storage::fake('public');
         $image = UploadedFile::fake()->image('test.jpeg');

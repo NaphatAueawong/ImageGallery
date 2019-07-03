@@ -6625,7 +6625,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.uploader {\n    min-height: 200px;\n    background: #ffffff;\n    color: #969696;\n    margin-bottom: 25px;\n    border: 3px dashed #b5b5b5;\n    font-size: 20px;\n    position: relative;\n    cursor: pointer;\n}\n.uploader i{\n    width: 100%;\n    padding-top: 40px;\n    text-align: center;\n    font-size: 70px;\n}\n.uploader p{\n    text-align: center;\n    font-size: 20px;\n}\n.file-input{\n    opacity: 0;\n    width: 100%;\n    height: 200px;\n    position: absolute;\n    cursor: pointer;\n}\n.image-thumbnail {\n    text-align: center;\n    margin-bottom: 25px;\n}\nimg {\n    width: 250px;\n    height: 250px;\n}\n\n", ""]);
+exports.push([module.i, "\n.uploader {\n    min-height: 200px;\n    background: #ffffff;\n    color: #969696;\n    margin-bottom: 25px;\n    border: 3px dashed #b5b5b5;\n    font-size: 20px;\n    position: relative;\n    cursor: pointer;\n}\n.uploader i{\n    width: 100%;\n    padding-top: 40px;\n    text-align: center;\n    font-size: 70px;\n}\n.uploader p{\n    text-align: center;\n    font-size: 20px;\n}\n.file-input{\n    opacity: 0;\n    width: 100%;\n    height: 200px;\n    position: absolute;\n    cursor: pointer;\n}\n.image-thumbnail {\n    position: relative;\n    text-align: center;\n    margin-bottom: 25px;\n}\n.image-thumbnail:hover .preview-del-icon{\n    display: block;\n}\nimg {\n    width: 250px;\n    height: 250px;\n}\n.preview-del-icon{\n    position: absolute;\n    top:100px;\n    left:130px;\n    display: none;\n}\n\n", ""]);
 
 // exports
 

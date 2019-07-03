@@ -230,13 +230,26 @@
     }
 
     .image-thumbnail {
+        position: relative;
         text-align: center;
         margin-bottom: 25px;
+
+    }
+
+    .image-thumbnail:hover .preview-del-icon{
+        display: block;
     }
 
     img {
         width: 250px;
         height: 250px;
+    }
+
+    .preview-del-icon{
+        position: absolute;
+        top:100px;
+        left:130px;
+        display: none;
     }
 
 </style>
